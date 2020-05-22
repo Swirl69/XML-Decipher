@@ -353,7 +353,7 @@ Public Class Form1
                 Case Xml.XmlNodeType.Element
                     If myXMLReader.Name.ToString = "Story" Then
 
-                        'When the 1st Story node is found, PARTSINSTORY(0) will equal 0.  The 0th array is never refrenced so it acts like a temporary placeholder.
+                        'When the 1st Story node is found, PARTSINSTORY(0) will equal 0.  The 0th array is never referenced so it acts like a temporary placeholder.
                         'All subsequent stories will align perfectly.
 
                         PartsInStory(A) = B
@@ -361,7 +361,7 @@ Public Class Form1
                         'Now we add 1 to the story counter.  
                         A = A + 1
 
-                        'Now we increase the TOTAL_PART_NUMBERS.  On the first sory, before any parts are found, TOTALPARTNUMBERS ++ B will be 0, as it should be.
+                        'Now we increase the TOTAL_PART_NUMBERS.  On the first story, before any parts are found, TOTALPARTNUMBERS ++ B will be 0, as it should be.
 
                         TotalPartNumbers = TotalPartNumbers + B
 
